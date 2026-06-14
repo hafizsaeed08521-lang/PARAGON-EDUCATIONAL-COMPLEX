@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#fff8dc"/>
+  <rect x="100" y="240" width="600" height="180" rx="20" fill="#6b7280"/>
+  <rect x="160" y="280" width="120" height="100" rx="18" fill="#f6b800"/>
+  <rect x="320" y="280" width="120" height="100" rx="18" fill="#f6b800"/>
+  <rect x="480" y="280" width="120" height="100" rx="18" fill="#f6b800"/>
+  <path d="M100 240 C220 180 380 180 500 240" stroke="#6b7280" stroke-width="14" fill="none"/>
+  <text x="50%" y="460" dominant-baseline="middle" text-anchor="middle" fill="#6b7280" font-size="34" font-family="Arial">Primary Block</text>
+</svg>

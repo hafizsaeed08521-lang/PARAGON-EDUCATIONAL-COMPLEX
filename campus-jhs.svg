@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#fff8dc"/>
+  <rect x="120" y="220" width="220" height="160" rx="20" fill="#6b7280"/>
+  <rect x="180" y="170" width="120" height="60" rx="16" fill="#f6b800"/>
+  <rect x="160" y="300" width="80" height="80" rx="16" fill="#f6b800"/>
+  <rect x="260" y="300" width="80" height="80" rx="16" fill="#f6b800"/>
+  <rect x="430" y="260" width="200" height="140" rx="20" fill="#6b7280"/>
+  <path d="M430 260 L530 170 L630 260" fill="#f6b800" opacity="0.6"/>
+  <text x="50%" y="460" dominant-baseline="middle" text-anchor="middle" fill="#6b7280" font-size="34" font-family="Arial">JHS Block</text>
+</svg>

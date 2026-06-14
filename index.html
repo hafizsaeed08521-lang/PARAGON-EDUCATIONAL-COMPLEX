@@ -9,60 +9,132 @@
   <body>
     <header class="site-header">
       <h1>paragon educational complex</h1>
+      <p class="motto">Knowledge is power</p>
       <nav>
         <a href="#about">About</a>
         <a href="#programs">Programs</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#campus">Campus</a>
         <a href="#admissions">Admissions</a>
       </nav>
     </header>
 
     <main>
       <section id="about" class="panel">
-        <img class="section-image" src="images/school.svg" alt="School campus photo">
         <h2>About Us</h2>
-        <p>paragon educational complex is committed to academic excellence, kindness, and creativity. We serve students from grades K–12 and offer a balanced curriculum of academics, arts, and athletics.</p>
+        <p>paragon educational complex offers a warm, modern day school and a safe boarding program for students who live farther away. Our boarding houses feel like a second home, with caring staff, cozy rooms, and lots of support for study and friendship.</p>
+        <p>We also offer an Islamic block dormitory where students can live in a calm, respectful environment that supports faith, learning, and brotherhood. The campus also includes a mosque for daily prayer, reflection, and community gatherings.</p>
+        <p>Our teachers are the heart of the school. They are inspiring, energetic, and always ready to help every student grow. They make learning fun, build confidence, and cheer on success in every classroom.</p>
       </section>
 
       <section id="programs" class="panel">
         <h2>Programs</h2>
-        <ul>
-          <li>STEM and robotics</li>
+        <p>At paragon educational complex we run a wide range of programmes designed to develop the whole child. From faith-based learning and character education to technology, the arts, and sports, each programme is led by passionate teachers who bring lessons to life.</p>
+        <p>Our extra-curricular programmes include Qur'anic recitation circles, visual and performing arts workshops, competitive athletics teams, and many after-school clubs where students can explore robotics, music, drama, and community service. These programmes help students discover talents, build teamwork skills, and prepare for the future.</p>
+        <ul class="program-list">
+          <li>Qur'anic recitation</li>
           <li>Visual and performing arts</li>
           <li>Competitive athletics</li>
           <li>After-school clubs and enrichment</li>
         </ul>
       </section>
 
+      <section id="subjects" class="panel">
+        <h2>Subjects We Teach</h2>
+        <p>Our academic curriculum is broad and balanced. We give strong foundations in core academic subjects while encouraging creativity and digital skills.</p>
+        <ul class="subject-list">
+          <li>Science</li>
+          <li>Mathematics</li>
+          <li>English</li>
+          <li>French</li>
+          <li>Creative Arts</li>
+          <li>Information & Communication Technology (ICT)</li>
+          <li>Qur'anic Studies</li>
+        </ul>
+        <p>Each subject is taught with practical activities, hands-on projects, and regular assessments to make sure learners understand and can apply what they learn. Our teachers design engaging lessons that mix experiments, discussions, and creative tasks to keep learning exciting.</p>
+      </section>
+
+      <section id="campus" class="panel">
+        <h2>Campus & Blocks</h2>
+        <p>Our campus is arranged so every student has space to learn, play, and grow. Below are the main areas you will find at paragon educational complex:</p>
+        <ul class="campus-list">
+          <li>School Park — the green heart of the campus for outdoor learning and recreation</li>
+          <li>Islamic Block — junior high classrooms, labs, and teacher offices</li>
+          <li>Primary Block — bright, safe classrooms for younger learners</li>
+          <li>Library & Media Centre — books, study spaces, and computers</li>
+          <li>Science Labs — fully equipped for experiments and STEM work</li>
+          <li>Sports Field — for PE lessons, matches, and athletics practice</li>
+        </ul>
+        <div class="campus-images">
+          <figure class="section-figure">
+            <img class="section-image" src="images/DSFV3311.WEBP" alt="School Park">
+            <figcaption>School Park</figcaption>
+          </figure>
+          <figure class="section-figure">
+            <img class="section-image" src="images/GEBE2648.WEBP" alt="Primary Block">
+            <figcaption>Primary Block</figcaption>
+          </figure>
+          <figure class="section-figure">
+            <img class="section-image" src="images/NHUJ9461.WEBP" alt="Islamic Block">
+            <figcaption>Islamic Block</figcaption>
+          </figure>
+          <figure class="section-figure">
+            <img class="section-image" src="images/FPKU0045.WEBP" alt="Mosque">
+            <figcaption>Mosque</figcaption>
+          </figure>
+        </div>
+        <p>Visitors often comment on our friendly staff and well-kept grounds — everything is organised so students feel safe and inspired every day.</p>
+      </section>
+
       <section id="admissions" class="panel">
         <h2>Admissions</h2>
         <p>Ready to apply? Fill out the short form below and our admissions team will contact you.</p>
 
-        <form id="admissions-form">
+        <form id="admissions-form" enctype="multipart/form-data">
           <div class="form-row">
             <input name="firstName" placeholder="First name" required />
             <input name="lastName" placeholder="Last name" />
           </div>
           <div class="form-row">
-            <input name="email" placeholder="Email" type="email" required />
-            <input name="phone" placeholder="Phone" />
+            <select name="gender" required>
+              <option value="">Select gender...</option>
+              <option value="boy">Boy</option>
+              <option value="girl">Girl</option>
+            </select>
           </div>
           <div class="form-row">
-            <select name="grade">
-              <option value="">Applying for grade...</option>
-              <option>Kindergarten</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
+            <label class="checkbox-row">
+              <input type="checkbox" name="hasMedical" id="hasMedical"> Has medical condition or disability
+            </label>
+          </div>
+          <div class="form-row medical-fields" style="display:none;">
+            <textarea name="medicalDetails" placeholder="Describe condition, medications, special needs (optional)"></textarea>
+          </div>
+          <div class="form-row">
+            <input name="phone" placeholder="Phone number" required />
+            <select name="admissionType" required>
+              <option value="">Applying as...</option>
+              <option value="day">Day student</option>
+              <option value="boarding">Boarding student</option>
             </select>
+          </div>
+          <div class="form-row">
+            <select name="classLevel" id="classLevel" required>
+              <option value="">Select class level...</option>
+              <option value="preschool">Pre-school</option>
+              <option value="primary">Primary</option>
+              <option value="jhs">JHS</option>
+            </select>
+            <select name="classChoice" id="classChoice" required disabled>
+              <option value="">Select class...</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>Upload recent photo (optional)</label>
+            <input type="file" name="photo" accept="image/*" />
+          </div>
+          <div class="form-row boarding-fields" style="display:none;">
+            <input name="boardingRoom" placeholder="Preferred boarding house or room" />
           </div>
           <div class="form-row">
             <textarea name="message" placeholder="Tell us anything you'd like us to know"></textarea>
@@ -78,6 +150,7 @@
 
     <footer class="site-footer">
       <small>© paragon educational complex</small>
+      <p class="thank-you">Thank you for visiting our admissions office — we appreciate your interest and wish your child every success.</p>
     </footer>
 
     <script src="/app.js"></script>
